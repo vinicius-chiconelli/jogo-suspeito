@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Suspeito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Jogo do Suspeito</h1>
+    <button id="startButton">Iniciar Jogo</button>
+    <button id="nextRoundButton" class="hidden">Próxima Rodada</button>
+  </header>
+
+  <div id="tabuleiro" class="hidden">
+    <div id="suspeitos" class="categoria">
+      <h2>Suspeitos</h2>
+      <ul>
+        <li data-category="suspeitos" data-item="Mordomo" class="item">Mordomo</li>
+        <li data-category="suspeitos" data-item="Cozinheiro" class="item">Cozinheiro</li>
+        <li data-category="suspeitos" data-item="Motorista" class="item">Motorista</li>
+        <li data-category="suspeitos" data-item="Empregada" class="item">Empregada</li>
+        <li data-category="suspeitos" data-item="Esposa" class="item">Esposa</li>
+        <li data-category="suspeitos" data-item="Vizinho" class="item">Vizinho</li>
+        <li data-category="suspeitos" data-item="Jardineiro" class="item">Jardineiro</li>
+      </ul>
+    </div>
+    
+    <div id="armas" class="categoria">
+      <h2>Armas</h2>
+      <ul>
+        <li data-category="armas" data-item="Faca" class="item">Faca</li>
+        <li data-category="armas" data-item="Revólver" class="item">Revólver</li>
+        <li data-category="armas" data-item="Chave de Boca" class="item">Chave de Boca</li>
+        <li data-category="armas" data-item="Veneno" class="item">Veneno</li>
+        <li data-category="armas" data-item="Abajur" class="item">Abajur</li>
+        <li data-category="armas" data-item="Tesoura de Poda" class="item">Tesoura de Poda</li>
+        <li data-category="armas" data-item="Martelo" class="item">Martelo</li>
+      </ul>
+    </div>
+    
+    <div id="locais" class="categoria">
+      <h2>Locais</h2>
+      <ul>
+        <li data-category="locais" data-item="Varanda" class="item">Varanda</li>
+        <li data-category="locais" data-item="Escritório" class="item">Escritório</li>
+        <li data-category="locais" data-item="Hall Central" class="item">Hall Central</li>
+        <li data-category="locais" data-item="Biblioteca" class="item">Biblioteca</li>
+        <li data-category="locais" data-item="Sala de Jantar" class="item">Sala de Jantar</li>
+        <li data-category="locais" data-item="Cozinha" class="item">Cozinha</li>
+        <li data-category="locais" data-item="Banheiro" class="item">Banheiro</li>
+        <li data-category="locais" data-item="Suíte" class="item">Suíte</li>
+        <li data-category="locais" data-item="Quarto" class="item">Quarto</li>
+        <li data-category="locais" data-item="Escadaria" class="item">Escadaria</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="campoAnotacoes">
+    <h3>Anotações</h3>
+    <textarea id="anotacoes" rows="4" cols="50" placeholder="Anote suas observações aqui..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
